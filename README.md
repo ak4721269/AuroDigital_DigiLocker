@@ -2,25 +2,25 @@
 
 ##Key feature:
 
-##Digilocker web page
+## Digilocker web page
 ![Digilocker welcome](https://github.com/user-attachments/assets/01504079-5a91-4ace-a5ad-9690b6bee7b1)
 
-##Password verification
+## Password verification
 ![Password verification](https://github.com/user-attachments/assets/7411287f-dcd3-4b7d-a124-710bcb2beb2f)
 
-##Check for existing username
+## Check for existing username
 ![Existing username](https://github.com/user-attachments/assets/7928da5d-63f1-46b7-8686-d82dbcead866)
 
-##Integrated javascript for password verification
+## Integrated javascript for password verification
 ![Integrated javascript](https://github.com/user-attachments/assets/244b894e-259a-4743-8623-c2d8a6f57256)
 
-##Signup successful
+## Signup successful
 ![signup successful](https://github.com/user-attachments/assets/16916152-a53f-4643-80e2-6c08b846a6dc)
 
-##Login successful
+## Login successful
 ![Login successful](https://github.com/user-attachments/assets/3bed8442-c3c1-4feb-a817-118a0d907fd9)
 
-##Upload Document functionality
+## Upload Document functionality
 ![upload resume](https://github.com/user-attachments/assets/8e76d4d9-4cb1-43fb-8afc-b39890a3fc1b)
 
 
