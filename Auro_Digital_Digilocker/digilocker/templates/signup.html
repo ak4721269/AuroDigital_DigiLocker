@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-custom mx-auto">
+    <h2 class="text-center fw-bold">Create an Account</h2>
+    <form action="/signup/" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required onkeyup="checkPasswordStrength()">
+            <div id="password-strength" class="form-text"></div>
+        </div>
+        <button type="submit" class="btn btn-custom w-100">Sign Up</button>
+    </form>
+</div>
+
+<script>
+function checkPasswordStrength() {
+    const password = document.getElementById('password').value;
+    const strengthText = document.getElementById('password-strength');
+    let strength = 0;
+
+    if (password.length >= 8) strength++;
+    if (/[A-Z]/.test(password)) strength++;
+    if (/[a-z]/.test(password)) strength++;
+    if (/[0-9]/.test(password)) strength++;
+    if (/[\W]/.test(password)) strength++; // Special characters
+
+    const messages = ["Weak", "Moderate", "Strong"];
+    strengthText.textContent = messages[strength - 1] || "Strong";
+    strengthText.style.color = strength >= 3 ? "green" : "red";
+}
+</script>
+{% endblock %}
